@@ -1,4 +1,4 @@
-# Project Name: SQL Query Generator using Gemini and SQLite
+# SQL Query Generator using Gemini-pro and SQLite
 
 ## Description:
 This project aims to create a simple demonstration application for utilizing GenerativeAI's Large Language Models (LLM) to generate SQL queries based on natural language input. The application further executes these queries on a SQLite database, retrieving and presenting the resulting data to the user.
