@@ -1,0 +1,1 @@
+{"sql_query": "\nSELECT\n  STRFTIME('%Y', sales_date) AS sales_year,\n  SUM(sales_amount) AS total_sales_revenue\nFROM sales\nGROUP BY sales_year\nORDER BY sales_year;\n", "database_result": [["2022", 3000], ["2023", 1500]]}

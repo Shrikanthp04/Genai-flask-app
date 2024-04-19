@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/results.css')}}">
+</head>
+
+<body>
+    <div class="container">
+        <h5>User Input Text:</h5>
+        <p>{{ user_input_text }}</p>
+
+        <h5>SQL Query by LLM:</h5>
+        <p>{{ sql_query_by_llm }}</p>
+
+        <h5>Database Result:</h5>
+        <pre>{{ db_result | tojson(indent=4) }}</pre>
+
+        <h5>JSON Data:</h5>
+        <pre>{{ json_data | tojson(indent=4) }}</pre>
+    </div>
+</body>
+
+</html>

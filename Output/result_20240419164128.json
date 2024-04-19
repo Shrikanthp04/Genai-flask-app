@@ -1,0 +1,1 @@
+{"sql_query": "\nSELECT customer_name FROM customers;\n", "database_result": [["John Doe"], ["Jane Smith"], ["Mark Johnson"], ["Sarah Lee"], ["shri"]]}

@@ -1,0 +1,1 @@
+{"sql_query": "\nSELECT product_name, \n       strftime('%Y', sales_date) AS sales_year,\n       SUM(sales_amount) AS total_sales\nFROM sales\nJOIN products ON sales.product_id = products.product_id\nGROUP BY sales_year, product_name\nORDER BY sales_year, total_sales DESC\nLIMIT 1;\n", "database_result": [["Product E", "2022", 1000]]}
